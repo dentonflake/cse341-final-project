@@ -1,0 +1,25 @@
+{
+  "name": "cse341-employees",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "Denton Flake",
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.1",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^8.22.0",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "swagger-autogen": "^2.23.7"
+  }
+}
