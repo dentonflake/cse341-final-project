@@ -21,7 +21,7 @@ importers:
         specifier: ^5.2.1
         version: 5.2.1
       mongoose:
-        specifier: ^8.13.1
+        specifier: ^8.22.0
         version: 8.22.0
       swagger-ui-express:
         specifier: ^5.0.1

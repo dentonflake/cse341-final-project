@@ -5,8 +5,8 @@ const doc = {
     title: 'Vehicle Management API',
     description: 'Documentation for the Vehicle Management API'
   },
-  host: 'localhost:3000',
-  schemes: ['http']
+  host: 'cse341-final-project-1zc7.onrender.com',
+  schemes: ['https']
 };
 
 const outputFile = './swagger.json';

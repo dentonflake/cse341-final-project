@@ -44,8 +44,9 @@ mongodb.initDb((err) => {
   if (err) {
     console.error(err);
   } else {
-    app.listen(port, () =>
-      console.log(`Server running on port ${port}`)
-    );
+    app.listen(port, () => {
+      console.log(`Server running on port ${port}`);
+      console.log(`Swagger UI available at http://localhost:${port}/documentation`);
+    });
   }
 });
