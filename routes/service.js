@@ -1,5 +1,6 @@
 // Import necessary modules
 const express = require('express');
+const { isAuthenticated } = require('../middleware/authenticate');
 
 // Create a new router instance
 const router = express.Router();
@@ -16,9 +17,9 @@ const {
 // Define routes
 router.get('/', getAllServices);
 router.get('/:id', getServiceById);
-router.post('/', createService);
-router.put('/:id', updateService);
-router.delete('/:id', deleteService);
+router.post('/', isAuthenticated, createService);
+router.put('/:id', isAuthenticated, updateService);
+router.delete('/:id', isAuthenticated, deleteService);
 
 // Export the router
 module.exports = router;
