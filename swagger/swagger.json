@@ -7,7 +7,7 @@
   },
   "basePath": "/",
   "paths": {
-    "/documentation": {
+    "/api-docs": {
       "get": {
         "description": "",
         "responses": {

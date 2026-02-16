@@ -13,7 +13,7 @@ const logout = async (req, res, next) => {
 
   req.logout((err) => {
     if (err) return next(err);
-    res.redirect('/documentation');
+    res.redirect('/api-docs');
   });
 };
 

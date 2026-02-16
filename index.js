@@ -72,7 +72,7 @@ app.get('/', (req, res) => {
 
 app.get('/github/callback', passport.authenticate('github', { failureRedirect: '/api-docs', session: false }), (req, res) => {
   req.session.user = req.user;
-  res.redirect('/documentation');
+  res.redirect('/api-docs');
 });
 
 // Initialize database and start server
@@ -82,7 +82,7 @@ mongodb.initDb((err) => {
   } else {
     app.listen(port, () => {
       console.log(`Server running on port ${port}`);
-      console.log(`Swagger UI available at http://localhost:${port}/documentation`);
+      console.log(`Swagger UI available at http://localhost:${port}/api-docs`);
     });
   }
 });
